@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYS_NODE_03</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #FFFFFF;
+            font-family: monospace;
+            text-align: center;
+            margin: 0;
+            padding-top: 20%;
+        }
+        .signal-indicator {
+            font-size: 12px;
+            letter-spacing: 4px;
+            color: #333333;
+            text-transform: uppercase;
+        }
+        .audio-wrapper {
+            margin-top: 40px;
+            display: inline-block;
+            width: 80%;
+            max-width: 400px;
+        }
+        audio {
+            width: 100%;
+            filter: invert(1) hue-rotate(190deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="signal-indicator">SIGNAL_STREAM_144 // INBOUND</div>
+
+    <div class="audio-wrapper">
+        <audio controls loop>
+            <source src="Audio.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+</body>
+</html>
